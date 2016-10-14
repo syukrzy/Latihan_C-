@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication3
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{ 
+			string nama,alamat,hobi,nohap;
+			Console.Write ("\n Masukkan Nama Anda  : ");
+			nama = Console.ReadLine();
+			Console.Write ("\n Masukkan alamat anda: ");
+			alamat = Console.ReadLine();
+      Console.Write ("\n No.Hp               : ");
+      nohap = double.Parse(Console.ReadLine());
+      Console.Write ("\n Apakah Hobi Anda    : ");
+      hobi = Console.ReadLine();
+			Console.Write (" Nama    : {0}", nama,);
+			Console.Write (" alamat  : {0}, alamat,);
+      Console.Write (" No Hp.  : {0}", nohap,);
+			Console.Write (" Hobi    : {0}, hobi,);
+			Console.Read();
+
+		}
+	}
+
+}
