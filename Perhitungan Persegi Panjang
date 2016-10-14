@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication3
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{ 
+		
+			double konversi_panjang,konversi_lebar, luas, keliling;
+			Console.Write ("\n Hitung Luas dan Keliling Persegi panjang");
+			Console.Write ("\n ========================================");
+			Console.Write ("\n Silahkan Masukkan angkanya "); 
+			Console.Write("\n Panjang: ");
+			konversi_panjang = double.Parse( Console.ReadLine());
+			Console.Write ("\n lebar : ");
+			konversi_lebar = double.Parse( Console.ReadLine());
+			Console.Clear ();
+      
+			Console.Write ("\n =================================");
+			Console.Write ("\n     Aritmatik Persegi Panjang    ");
+			Console.Write ("\n =================================");
+			luas = konversi_panjang * konversi_lebar;
+			Console.WriteLine("\n  Luas Persegi Panjang     = {0}",luas);
+			keliling = 2 * (konversi_lebar + konversi_panjang);
+			Console.WriteLine("\n  Keliling Persegi Panjang = {0}",keliling);
+			Console.Read();
+      
+		}
+	}
+
+}
