@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication3
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{ 
+			string nama,kelas,jrs,alamat;
+			double nim,tlp;
+
+			Console.Write ("\n Masukkan Nama Anda  : ");
+			nama = Console.ReadLine();
+			Console.Write ("\n Masukkan NIM anda   : ");
+			nim = double.Parse(Console.ReadLine());
+			Console.Write ("\n Masukkan Kelas anda : ");
+			kelas = Console.ReadLine ();
+			Console.Write ("\n Masukkan Jurusan anda : ");
+			jrs = Console.ReadLine ();
+			Console.Write ("\n Masukkan No.Tlp anda: ");
+			tlp = double.Parse(Console.ReadLine());
+			Console.Write ("\n Masukkan Alamat anda: ");
+			alamat = Console.ReadLine ();
+			Console.Clear ();
+      
+			Console.Write ("\n ============================== ");
+			Console.Write ("\n \t  BIODATA KU");
+			Console.Write ("\n ============================== ");
+			Console.Write ("\n  Nama    : {0} \n  NIM     : {1} \n  Kelas   : {2}", nama, nim, kelas);
+			Console.Write ("\n  Jurusan : {0} \n  No.Tlp  : {1} \n  Alamat  : {2}", jrs, tlp, alamat);
+			Console.Write ("\n ============================== ");
+			Console.Write ("\n\t\t Created by syz");
+
+			Console.Read();
+
+		}
+	}
+
+}
