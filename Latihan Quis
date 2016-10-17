@@ -1,0 +1,180 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication3
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{ 
+		
+			const double PI = 3.14;
+			String input,  masukan, jari_jari;
+			double konversi_panjang, konversi_lebar, konversi_alas, konversi_tinggi, luas, keliling, konversi,sisi_miring;
+			Console.Write ("\n ========= GEOMETRIC 2 DIMENSI ========");
+			Console.Write ("\n Kode \t Nama Geometric ");
+			Console.Write ("\n ---- \t -------------- ");
+			Console.Write ("\n PP   \t Persegi Panjang");
+			Console.Write ("\n L    \t Lingkaran      ");
+			Console.Write ("\n S    \t Segitiga       ");
+			Console.Write ("\n Masukkan Kode Geometric Yang akan di hitung :");
+			input = Console.ReadLine ();
+			Console.Clear ();
+
+			if (input == "PP")
+      {
+				 Console.Write ("\n Geometric Persegi panjang");
+				 Console.Write ("\n ===========================");
+				 Console.Write ("\n a. Luas ");
+				 Console.Write ("\n b. Keliling ");
+				 Console.Write ("\n Pilih apa yang mau dihitung : ");
+				 masukan = Console.ReadLine ();
+
+				if (masukan == "a") {
+					Console.Write ("\n Silahkan Masukkan angkanya "); 
+					Console.Write ("\n Panjang: ");
+
+					konversi_panjang = double.Parse (Console.ReadLine ());
+					Console.Write ("\n lebar : ");
+					konversi_lebar = double.Parse (Console.ReadLine ());
+					Console.Clear ();
+					Console.Write ("\n =================================");
+					Console.Write ("\n     Aritmatik Persegi Panjang    ");
+					Console.Write ("\n =================================");
+					luas = konversi_panjang * konversi_lebar;
+					Console.WriteLine ("\n  Luas Persegi Panjang     = {0}", luas.ToString ());
+
+				} 
+        
+        else if (masukan == "b") 
+        {
+					Console.Write ("\n Silahkan Masukkan angkanya "); 
+					Console.Write ("\n Panjang: ");
+					konversi_panjang = double.Parse (Console.ReadLine ());
+					Console.Write ("\n lebar : ");
+					konversi_lebar = double.Parse (Console.ReadLine ());
+					Console.Clear ();
+					Console.Write ("\n =================================");
+					Console.Write ("\n     Aritmatik Persegi Panjang    ");
+					Console.Write ("\n =================================");
+		
+					keliling = 2 * (konversi_lebar + konversi_panjang);
+					Console.WriteLine ("\n  Keliling Persegi Panjang = {0}", keliling.ToString ());
+				} 
+        else 
+        {
+					Console.Write ("\n ERRORR ");
+	
+				}
+
+			} 
+      
+      else if (input == "L")
+			{
+				{
+					Console.Write ("\n Hitung Luas dan Keliling Lingkaran");
+					Console.Write ("\n ==================================");
+					Console.Write ("\n Silahkan pilih    :");
+					Console.Write ("\n a.Luas ");
+					Console.Write ("\n b.Keliling ");
+					Console.Write ("\n Silahkan Masukkan Pilihan anda:");
+
+				}
+        
+				  masukan = Console.ReadLine ();
+			  	if (masukan == "a") 
+          {
+					Console.Write ("\n Luas Lingkaran ");
+					Console.Write ("\n Silahkan Masukkan angkanya ");
+					Console.Write ("\n jari-jari : ");
+					jari_jari = Console.ReadLine ();
+					konversi = Convert.ToDouble (jari_jari);
+
+					Console.Clear ();
+					luas = PI * konversi * konversi;
+					Console.Write ("\n ==================================");
+					Console.Write ("\n        Aritmatika Lingkaran ");
+					Console.Write ("\n ==================================");
+					Console.WriteLine ("\n luas lingkaran adalah     : {0}", luas.ToString ());
+				} 
+				  else if (masukan == "b") {
+					jari_jari = Console.ReadLine ();
+					konversi = Convert.ToDouble (jari_jari);
+					Console.Write ("\n Luas Lingkaran ");
+					Console.Write ("\n Silahkan Masukkan angkanya ");
+					Console.Write ("\n jari-jari : ");
+					jari_jari = Console.ReadLine ();
+					konversi = Convert.ToDouble (jari_jari);
+					keliling = 2 * PI * konversi;
+					Console.Clear ();
+
+					Console.Write ("\n ==================================");
+					Console.Write ("\n        Aritmatika Lingkaran ");
+					Console.Write ("\n ==================================");
+					Console.WriteLine ("\n keliling lingkaran adalah : {0}", keliling.ToString ());
+				} 
+			    	else
+				{
+					Console.Write ("\n ERRORR....");
+				}
+			}
+
+				else if (input == "S")
+				{
+					{
+
+					Console.Write ("\n Geometric Segi Tiga");
+					Console.Write ("\n ====================");
+					Console.Write ("\n a. Luas ");
+					Console.Write ("\n b. Keliling ");
+					Console.Write ("\n Pilih apa yang mau dihitung : ");
+					masukan = Console.ReadLine ();
+
+					  if (masukan == "a") 
+            {
+						Console.Write ("\n Silahkan Masukkan angkanya "); 
+						Console.Write ("\n Panjang: ");
+
+						konversi_alas = double.Parse (Console.ReadLine ());
+						Console.Write ("\n lebar : ");
+						konversi_tinggi = double.Parse (Console.ReadLine ());
+						Console.Clear ();
+						Console.Write ("\n =================================");
+						Console.Write ("\n     Aritmatik Persegi Panjang    ");
+						Console.Write ("\n =================================");
+						luas = 1/2 * konversi_alas * konversi_tinggi;
+						Console.WriteLine ("\n  Luas Persegi Panjang     = {0}", luas.ToString ());
+
+					  } 
+					  else if (masukan == "b") 
+            {
+						Console.Write ("\n Silahkan Masukkan angkanya "); 
+						Console.Write ("\n Alas: ");
+						konversi_alas = double.Parse (Console.ReadLine ());
+						Console.Write ("\n Tinggi : ");
+						konversi_tinggi = double.Parse (Console.ReadLine ());
+						Console.Write("\n Sisi miring : ");
+						sisi_miring = double.Parse(Console.ReadLine());
+						keliling = konversi_alas + konversi_tinggi + sisi_miring;
+
+						Console.Clear ();
+						Console.Write ("\n =================================");
+						Console.Write ("\n     Aritmatik Persegi Panjang    ");
+						Console.Write ("\n =================================");
+
+
+						Console.WriteLine ("\n  Keliling Persegi Panjang = {0}", keliling.ToString ());
+					  }
+					  else
+					  {
+						Console.Write ("\n ERRORR ");
+						}
+
+			      Console.Read ();
+		        }
+		      }
+		    }
+	  }
+}
